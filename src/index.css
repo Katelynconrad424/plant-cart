@@ -1,0 +1,100 @@
+/* Overall layout */
+.app {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f6f6f6;
+}
+
+/* Left side (plants) */
+.plant-section {
+  width: 65%;
+}
+
+/* Right side (cart) */
+.cart-section {
+  width: 30%;
+}
+
+/* Titles */
+h1 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+/* Plant grid */
+.plant-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+/* Each plant card */
+.plant-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.emoji {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Add to cart button */
+.plant-item button {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+.plant-item button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Cart section */
+.cart-section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 6px 0;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item .emoji {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.cart-item button {
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 3px 7px;
+}
+
+.cart-item button:hover {
+  background-color: #f0f0f0;
+}
